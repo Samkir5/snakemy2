@@ -10,7 +10,7 @@ namespace Snakemy
     {
        
 
-        public VerticalLine(int x, int yTop, int yDown,  char sym)
+        public VerticalLine( int yTop, int yDown, int x, char sym)
         {
             pList = new List<Point>();
             for (int y = yTop; y <= yDown; y++)

@@ -19,8 +19,8 @@ namespace Snakemy
 
             HorisontalLine Upline = new HorisontalLine(0,78,0,'+');
             HorisontalLine Downline = new HorisontalLine(0, 78, 24, '+');
-            VerticalLine  Leftline = new VerticalLine(0, 0, 24, '+');
-            VerticalLine Rightline = new VerticalLine(78, 0, 24, '+');
+            VerticalLine  Leftline = new VerticalLine(0, 24, 0, '+');
+            VerticalLine Rightline = new VerticalLine(0, 24, 78, '+');
 
             Upline.Drow();
             Leftline.Drow();
