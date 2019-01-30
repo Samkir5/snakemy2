@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Snakemy
 {
-    class VerticalLine
+    class VerticalLine: Figure
     {
-        List<Point> pList;
+       
 
         public VerticalLine(int x, int yTop, int yDown,  char sym)
         {
             pList = new List<Point>();
-            for (int y = yTop; y < yDown; y++)
+            for (int y = yTop; y <= yDown; y++)
             {
                 Point p = new Point(x, y, sym);
                 pList.Add(p);
@@ -23,13 +23,5 @@ namespace Snakemy
 
         }
 
-        public void Drow()
-        {
-            foreach (Point p in pList)
-            {
-                p.Draw();
-            }
-
-        }
     }
 }

@@ -10,18 +10,26 @@ namespace Snakemy
     {
         static void Main(string[] args)
         {
-            
+
+           //Console.SetBufferSize(120, 30);
+            Console.SetWindowSize(1, 1);
+            Console.SetBufferSize(80, 25);
+            Console.SetWindowSize(80, 25);
 
 
-            Point p1 = new Point(1, 3, '*');
+            HorisontalLine Upline = new HorisontalLine(0,78,0,'+');
+            HorisontalLine Downline = new HorisontalLine(0, 78, 24, '+');
+            VerticalLine  Leftline = new VerticalLine(0, 0, 24, '+');
+            VerticalLine Rightline = new VerticalLine(78, 0, 24, '+');
+
+            Upline.Drow();
+            Leftline.Drow();
+            Downline.Drow();
+            Rightline.Drow();
+
+
+            Point p1 = new Point(4, 5, '*');
             p1.Draw();
-            Point p2 = new Point(4, 5, '#');
-            p2.Draw();
-
-            HorisontalLine hline1 = new HorisontalLine(5,10,8,'+');
-            hline1.Drow();
-            VerticalLine vline1 = new VerticalLine(5, 8, 20, '+');
-            vline1.Drow();
 
             //Console.WriteLine(i);
 
